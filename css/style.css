@@ -1,0 +1,772 @@
+/* ROOT */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color-scheme: white;
+}
+
+:root {
+    color-scheme: light;
+    --FO-COLOR: black;
+    --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486), hsla(0, 0%, 10%, 0.486));
+    --FO-FAMILY-HEADING: Arial, Helvetica, sans-serif;
+    --FONT-LINK: "Funnel Sans", sans-serif;
+    --BORDER: 4px solid var(--FO-COLOR)
+}
+
+
+body {
+    font-family: "Lexend", sans-serif;
+    font-weight: 350;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    flex-wrap: wrap;
+    color: var(--FO-COLOR);
+}
+
+
+
+strong{
+    font-weight: 550;
+}
+
+img {
+    display: flex;
+}
+
+/* ROOT-KONEC!!! */
+
+.regi{
+    display: none;
+}
+
+/* ZAČETNI POGLED, SLIKA, LINKI */
+.btn_show{
+    display: none;
+}
+.container {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1/-1;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/gerhard-crous-doivHPaG-Vw-unsplash_1_1600x1067.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-bottom: var(--BORDER);
+    flex-wrap: wrap;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    grid-row: inherit;
+    grid-column: inherit;
+}
+
+h1 {
+    font-size: clamp(4rem, 10vw, 7rem);
+    font-family: var(--FO-FAMILY-HEADING);
+    color: white;
+    text-shadow: 5px 0px 5px hsla(0, 0%, 0%, 0.589);
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+ul a {
+    font-family: var(--FONT-LINK);
+    font-weight: 500;
+    font-size: 3rem;
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul a:hover,
+ul a:focus {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+
+/* ZAČETNI POGLED, SLIKA, LINKI - KONEC!!!*/
+
+/* MAIN */
+
+main {
+    display: grid;
+    flex-direction: column;
+    grid-column: 1/-1;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
+
+/* O NAS */
+
+.O_nas {
+    border-bottom: var(--BORDER);
+    background-image: var(--BA-COLOR);
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.h2_onas {
+    grid-row: 1;
+    font-family: var(--FO-FAMILY-HEADING);
+    margin: 10px 0 0 0;
+    grid-column: 1/-1;
+    display: grid;
+    text-align: center;
+    font-size: clamp(1rem, 7.5vw, 4rem);
+}
+
+/* ALEŠ */
+
+.vseodAles {
+    text-align: justify;
+    margin-top: 1rem;
+    padding: 0;
+    display: grid;
+    grid-row: 2;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    border-bottom: var(--BORDER);
+}
+
+.OpisAleš {
+    grid-row: 2;
+    grid-column: 2/-1;
+    padding: 10px 2rem;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    letter-spacing: 1.2px;
+    word-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.BesediloAleš{
+    font-size: clamp(0.1rem, 1.75vw, 2rem);
+}
+
+.OpisAleš p::first-letter {
+    font-size: clamp(0.3rem, 4vw, 3rem);
+}
+
+.Aleš {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+}
+
+.Aleš img {
+    box-shadow: 1px 1px 50px -5px var(--FO-COLOR);
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ALEŠ - KONEC!!! */
+
+/* SOTLAR */
+
+.vseodSotlar {
+    text-align: justify;
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 3;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+.Sotlar_opis {
+    padding: 10px 2rem;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-column: 1;
+    letter-spacing: 1.2px;
+    word-spacing: 2px;
+    font-size: clamp(1rem, 1.75vw, 2rem);
+}
+
+
+.Sotlar_opis p::first-letter {
+    font-size: clamp(0.3rem, 4vw, 3rem);
+}
+
+.Jure {
+    display: grid;
+    grid-column: 2;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.Jure img {
+    box-shadow: 1px 1px 50px -5px var(--FO-COLOR);
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* SOTLAR - KONEC!!! */
+
+
+/* MARK */
+
+
+.vseodMark {
+    text-align: justify;
+    margin-top: 1rem;
+    padding: 0;
+    display: grid;
+    grid-row: 4;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    border-top: var(--BORDER);
+
+}
+
+.Markopis {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 10px 2rem;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    letter-spacing: 1.2px;
+    word-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.BesediloMark{
+    font-size: clamp(0.1rem, 1.75vw, 2rem);
+}
+
+.BesediloMark::first-letter {
+    font-size: clamp(0.3rem, 4vw, 3rem);
+}
+
+.Mark {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+}
+
+.Mark img {
+    box-shadow: 1px 1px 50px -5px var(--FO-COLOR);
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* MARK - KONEC!!! */
+
+/* O NAS - KONEC!!! */
+
+/* GALERIJA */
+
+.Galerija{
+    width: 100%;
+    display: grid;
+    background-image: var(--BA-COLOR);
+    grid-column: 1/-1;
+    grid-row: 2;
+    /*padding: 0 2.5rem 1.5rem 2.5rem;*/
+    border-bottom: var(--BORDER);
+    padding-bottom: 2rem;
+}
+.Galerija h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(1rem, 7.5vw, 4rem);
+    margin: 1rem;
+}
+
+
+/*section{
+    margin: 0;
+    max-width: 100%;
+}
+video{
+    margin: 0;
+    max-width: 100%;
+}*/
+
+
+
+.slike {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    gap: 3rem;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.slike img, .slike video {                   
+    max-width: 500px;         /*Rabm lepso razporeditev slik !!!!!!!!!!!!!!!!!!!!!!!!!*/
+    width: 100%;
+    border-radius: 5%;
+    /*max-width: 40vw;*/
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    /*object-position: left;*/
+    transition: transform 0.3s ease-in-out;
+}
+
+.slike img:hover, .slike video:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* GALERIJA - KONEC!!! */
+
+/* TABELA */
+
+.table {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1/-1;
+    justify-items: center;
+    align-items: flex-start;
+    background-image: var(--BA-COLOR);
+    padding: 10px 10px 20px 10px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+tr,
+th,
+td {
+    border: 2px solid var(--FO-COLOR);
+    padding: 2rem;
+    font-size: clamp(0.5rem, 3.75vw, 2.5rem);
+    text-align: center;
+}
+
+td {
+    background-color: rgba(59, 255, 255, 0.329);
+    font-family: "Roboto", sans-serif;
+    font-weight: 420;
+}
+
+.zadnja td{
+    padding: 10px !important;
+}
+
+th:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 15px 0 0;
+}
+
+.zadnja td:first-child {
+    border-radius: 0 0 0 15px;
+}
+
+.zadnja td:last-child {
+    border-radius: 0 0 15px 0;
+}
+
+.zadnja td{
+    width: auto;
+}
+
+.Čas {          /*TITLE TABELA*/
+    font-family: var(--FO-FAMILY-HEADING);
+    font-size: clamp(1rem, 7.5vw, 4rem);
+    text-align: center;
+}
+
+
+th {
+    font-family: "Roboto";
+    background-color: rgba(0, 255, 0, 0.404);
+}
+
+/* TABELA - KONEC!!! */
+
+
+/* MAIN - KONEC!!! */
+
+/* FOOTER */
+
+/* KONTAKT */
+
+footer {
+    grid-column: 1/-1;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-image: var(--BA-COLOR);
+}
+
+.Info {
+    font-family: var(--FO-FAMILY-HEADING);
+    display: grid;
+    grid-row: 3;
+    grid-column: 1/-1;
+}
+
+.h2_Info {
+    text-align: center;
+    font-size: clamp(1rem, 7.5vw, 4rem);
+}
+
+.foot {
+    display: block;
+    background-color: var(--BA-COLOR);
+    width: 100%;
+    height: auto;
+}
+
+.top{
+    margin: 40px;
+    display: inline-block;
+    border: 2px solid var(--FO-COLOR);
+    border-radius: 30px;
+    width: 50%;
+    font-family: var(--FONT-LINK);
+    text-decoration: none;
+    color: var(--FO-COLOR);
+    font-size: 3rem;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+.top:hover,
+.top:focus {
+    transform: scale(1.1);
+    font-size: 3.25rem;
+}
+
+
+.copy {
+    color: var(--FO-COLOR);
+    font-size: clamp(10px, 2rem, 4rem);
+}
+
+footer{
+    padding: 0 0 10px;
+}
+
+/* KONTAKT - KONEC!!! */
+
+/* FOOTER - KONEC!!! */
+
+/* MEDIA */
+
+
+
+@media (max-width: 600px){
+
+    html{
+        font-size: 7.5px;
+    }
+    
+    .top,
+    .opis {
+        margin: 0;
+    }
+    
+    .OpisAleš,
+    .Sotlar_opis,
+    .Markopis {
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+    
+    .Jure img, .Aleš img, .Mark img {
+        max-width: 150px;
+    }
+
+    .BesediloAleš, .BesediloSotlar, .BesediloMark{
+        font-size: clamp(0.5rem, 2.75vw, 3rem);
+    }
+    
+    .Aleš,
+    .Jure,
+    .Mark {
+        grid-row: 1;
+        grid-column: 1/-1;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    tr,
+    th,
+    td {
+        border: 1.5px solid var(--FO-COLOR);
+    }
+
+
+    section{
+        max-height: 50vh;
+    }
+    .container{
+        max-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    .hide{
+        display: none;
+    }
+    .slike{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .regi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .regi p{
+        color: white;
+        font-size: clamp(2rem, 4.5vw, 3rem);
+        font-weight: 500;
+    }
+
+    .regi a{
+        font-weight: 500;
+        font-family: var(--FONT-LINK);
+        text-decoration: none;
+        color: whitesmoke;
+        display: inline-block;
+        font-size: clamp(2.5rem, 5.25vw, 3.5rem);
+        margin-top: 0.5rem;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .regi a:hover{
+        transform: scale(1.2);
+    }
+
+    .copy{
+        margin-top: 2rem;
+    }
+
+    .top:focus, .top:hover, .top:active{
+        transform: none;
+    }
+}
+
+/* ZA TELEFON DELA KR UREDU, ZA TABLICO PA OSTALO PA ŠE NE */
+
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+    html {
+        font-size: 12.5px;
+    }
+    
+
+    .OpisAleš,
+    .Sotlar_opis,
+    .Markopis {
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+
+    .Aleš,
+    .Jure
+    .Mark {
+        grid-row: 1;
+        grid-column: 1/-1;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    tr,
+    th,
+    td {
+        border: 1.5px solid var(--FO-COLOR);
+    }
+    .opis{
+        font-size: 1.7rem;
+    }
+
+
+    section{
+        max-height: 50vh;
+    }
+    .container{
+        max-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+
+    .hide{
+        display: none;
+    }
+
+
+    .regi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .regi p{
+        color: white;
+        font-size: clamp(1.5rem, 4.5vw, 3rem);
+        font-weight: 500;
+    }
+
+    .regi a{
+        font-weight: 500;
+        font-family: var(--FONT-LINK);
+        text-decoration: none;
+        color: whitesmoke;
+        display: inline-block;
+        font-size: clamp(1.75rem, 5.25vw, 3.5rem);
+        margin-top: 0.5rem;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .regi a:hover{
+        transform: scale(1.2);
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+/*TUKI NE BO TEGA TO DT STRAN TUKI*/
+    /*.btn_show{
+        display: block;
+        position: fixed;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        background: rgba(225, 255, 255, 0.8);
+        padding: 14px 28px;
+        border-radius: 999px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: black;
+        text-decoration: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }  */
+
+    .OpisAleš,
+    .Sotlar_opis {
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+
+    .Aleš,
+    .Jure {
+        grid-row: 1;
+        grid-column: 1/-1;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    tr,
+    th,
+    td {
+        border: 1.5px solid var(--FO-COLOR);
+    }
+
+    .container{
+        max-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    nav ul{
+        margin-top: 2rem;
+        gap: 30px;
+    }
+
+    .slike{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486), hsla(0, 0%, 10%, 0.486)) !important;
+
+    }
+}

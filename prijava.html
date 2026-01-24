@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava</title>
+    <meta name="description" content="Prijavite otroka">
+    <meta name="color-scheme" content="light">
+    <link rel="stylesheet" href="css/prijava.css">
+</head>
+
+<body>
+    <header>
+        <h1>Za prijavo izpolnite obrazec.</h1>
+    </header>
+    <main> 
+        <form action="https://formspree.io/f/xojjowvq" method="post">    <!--DODEJ "q"-->
+            <div class="vse">
+            
+                <label class="mailLabel labl">E-mail: </label>
+                <input type="email" class="mail" name="E-mail" placeholder="aaa@gmail.com">
+
+                <label class="teleLabel labl">Tel. št.: </label>
+                <input type="tel" class="tele" name="Phone" placeholder="000-000-000">
+
+                <label class="starostLabel labl">Datum rojstva otroka: </label>
+                <input type="date" class="starost" name="Date">
+
+                <label class="sporociloLabel labl">Vprašanja: </label>
+                <textarea class="sporocilo" name="Sporočilo"></textarea>
+
+                <button type="submit" class="submit" id="submit">Pošlji</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="copy">
+            <a href="./" class="domov">Domov</a>
+        </div>
+    </footer>
+    <script src="prijava.js"></script>
+</body>
+
+</html>
+
