@@ -189,24 +189,15 @@ footer {
     textarea{
         margin: 0 0 1rem;
     }
-    .submit{
-        font-size: clamp(1.5rem, 5vw, 3.5rem);
-    }
-    .submit:hover, .submit:focus{
+    
+    .submit:hover, .submit:focus, .submit:active{
         transform: none;
         background-color: hsla(120, 100%, 58%, 0.75);
     }
-    .submit:active{
+    
+    .domov:hover, .domov:focus, .domov:active{
         transform: none;
-        background-color: hsla(120, 100%, 58%, 0.75);
+        
     }
-    .domov{
-        font-size: clamp(1.5rem, 5vw, 3.5rem);
-    }
-    .domov:hover, .domov:focus{
-        transform: scale(1.05);
-    }
-    .domov:active{
-        background-color: #fff;
-    }
+    
 }
