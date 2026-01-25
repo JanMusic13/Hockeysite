@@ -189,6 +189,7 @@ footer {
     }
     .submit, .domov{
         width: 75% !important;
+        font-size: clamp(1.5rem, 4.5vw, 3.5rem);
     }
     .submit:hover, .submit:focus, .submit:active{
         transform: none;
