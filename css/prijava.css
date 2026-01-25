@@ -101,13 +101,13 @@ textarea {
 
 
 .submit {
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 4.5vw, 3.5rem);
     font-family: "Lexend";
     border: solid;
     border-radius: 40px;
     width: 50% !important;
     margin-top: 20px;
-    padding: 0.5rem 0;
+    padding: 3px 0;
     transition: background-color 0.3s ease-in-out;
     background-color: hsla(120, 100%, 58%, 0.75);
     color: black;
@@ -134,7 +134,7 @@ textarea {
     height: auto;
     width: 50% !important;
     text-align: center;
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 4.5vw, 3.5rem);
     color: var(--FO-COLOR);
     background-color: #fff;
     text-decoration: none;
@@ -193,11 +193,12 @@ footer {
     .submit:hover, .submit:focus, .submit:active{
         transform: none;
         background-color: hsla(120, 100%, 58%, 0.75);
+        font-size: clamp(1.5rem, 4.5vw, 3.5rem);
     }
     
     .domov:hover, .domov:focus, .domov:active{
         transform: none;
-
+        font-size: clamp(1.5rem, 4.5vw, 3.5rem);
     }
     
 }
