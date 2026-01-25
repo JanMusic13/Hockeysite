@@ -23,22 +23,22 @@
     </header>
     <main> 
         <form action="https://formspree.io/f/xojjowvq" method="post">    <!--DODEJ "q"-->
-            <div class="vse">
+            <section class="vse">
             
-                <label class="mailLabel labl">E-mail: </label>
-                <input type="email" class="mail" name="E-mail" placeholder="aaa@gmail.com">
+                <label class="mailLabel labl" for="email_starsa">E-mail: </label>
+                <input type="email" class="mail" name="E-mail" placeholder="aaa@gmail.com" id="email_starsa">
 
-                <label class="teleLabel labl">Tel. št.: </label>
-                <input type="tel" class="tele" name="Phone" placeholder="000-000-000">
+                <label class="teleLabel labl" for="phone_starsa">Tel. št.: </label>
+                <input type="tel" class="tele" name="Phone" placeholder="000-000-000" id="phone_starsa">
 
-                <label class="starostLabel labl">Datum rojstva otroka: </label>
-                <input type="date" class="starost" name="Date">
+                <label class="starostLabel labl" for="date_otroka">Datum rojstva otroka: </label>
+                <input type="date" class="starost" name="Date" id="date_otroka">
 
-                <label class="sporociloLabel labl">Vprašanja: </label>
-                <textarea class="sporocilo" name="Sporočilo"></textarea>
+                <label class="sporociloLabel labl" for="sporocilo_starsa">Vprašanja: </label>
+                <textarea class="sporocilo" name="Sporočilo" id="sporocilo_starsa"></textarea>
 
                 <button type="submit" class="submit" id="submit">Pošlji</button>
-            </div>
+            </section>
         </form>
     </main>
     <footer>
