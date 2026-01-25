@@ -187,6 +187,10 @@ footer {
     textarea{
         margin: 0 0 1rem;
     }
+    .input, textarea{
+        font-size: clamp(1.5rem, 4.5vw, 3.5rem);
+        width: 75% !important;
+    }
     .submit, .domov{
         width: 75% !important;
         font-size: clamp(1.5rem, 4.5vw, 3.5rem);
