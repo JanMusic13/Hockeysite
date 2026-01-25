@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prijava</title>
     <meta name="description" content="Prijavite otroka">
@@ -14,7 +15,6 @@
     <meta property="og:title" content="Individualno učenje hokeja | Prijava">
     <meta property="og:description" content="Prijavite otroka">
     <meta property="og:image" content="https://janmusic13.github.io/Hockeysite/img/Main.webp">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;">
     
 </head>
 
@@ -27,16 +27,16 @@
             <section class="vse">
             
                 <label class="mailLabel labl" for="email_starsa">E-mail: </label>
-                <input type="email" class="mail" name="E-mail" placeholder="aaa@gmail.com" id="email_starsa">
+                <input type="email" class="mail" name="E-mail" placeholder="aaa@gmail.com" id="email_starsa" autocomplete="email">
 
                 <label class="teleLabel labl" for="phone_starsa">Tel. št.: </label>
-                <input type="tel" class="tele" name="Phone" placeholder="000-000-000" id="phone_starsa">
+                <input type="tel" class="tele" name="Phone" placeholder="000-000-000" id="phone_starsa" autocomplete="tel">
 
                 <label class="starostLabel labl" for="date_otroka">Datum rojstva otroka: </label>
-                <input type="date" class="starost" name="Date" id="date_otroka">
+                <input type="date" class="starost" name="Date" id="date_otroka" autocomplete="bday">
 
                 <label class="sporociloLabel labl" for="sporocilo_starsa">Vprašanja: </label>
-                <textarea class="sporocilo" name="Sporočilo" id="sporocilo_starsa"></textarea>
+                <textarea class="sporocilo" name="Sporočilo" id="sporocilo_starsa" autocomplete="off"></textarea>
 
                 <button type="submit" class="submit" id="submit">Pošlji</button>
             </section>
