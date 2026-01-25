@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
     margin: 0;
@@ -13,7 +9,6 @@
 html {
     scroll-behavior: smooth;
     font-size: 20px;
-    font-family: "Inter", sans-serif;
     color: var(--FO-COLOR);
 }
 
@@ -21,13 +16,13 @@ html {
     color-scheme: light;
     --FO-COLOR: black;
     --BA-COLOR: radial-gradient(#E3E3E3, rgba(0, 0, 0, 0.486));
-    --FO-FAMILY-HEADING: Arial, Helvetica, sans-serif;
-    --FONT-LINK: "Funnel Sans", sans-serif;
+    --FO-FAMILY-HEADING: Arial, Helvetica;
+    --FONT-LINK: "Funnel Sans";
     --MARGIN-INPUT: 40px 0;
 }
 
 body {
-    font-family: "Lexend", sans-serif;
+    font-family: "Lexend";
     font-weight: 350;
     width: 100%;
     background-image: var(--BA-COLOR);
@@ -95,7 +90,7 @@ form{
 
 
 textarea {
-    font-family: "Lexend", sans-serif;
+    font-family: "Lexend";
     resize: none;
     font-size: 1rem;
     padding: 1.5rem 2rem;
@@ -107,7 +102,7 @@ textarea {
 
 .submit {
     font-size: clamp(1rem, 4vw, 3rem);
-    font-family: "Lexend", sans-serif;
+    font-family: "Lexend";
     border: solid;
     border-radius: 40px;
     width: max(10rem, 30%) !important;
@@ -142,7 +137,6 @@ textarea {
     font-size: clamp(1rem, 4vw, 3rem);
     color: var(--FO-COLOR);
     background-color: #fff;
-    font-family: var(--FONT-LINK);
     text-decoration: none;
     border: 2px solid var(--FO-COLOR);
     border-radius: 30px;
