@@ -110,8 +110,8 @@ textarea {
     border-radius: 40px;
     margin: 20px 0 0;
     padding: 3px 0;
+    text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s ease-in-out;
     background-color: hsla(120, 100%, 58%, 0.75);
     color: var(--FO-COLOR);
     cursor: pointer;
@@ -139,14 +139,12 @@ textarea {
     border-radius: 40px;
     margin: 20px 0;
     padding: 3px 0;
-    text-align: center;
     text-decoration: none;
-    color: var(--FO-COLOR);
+    text-align: center;
     background-color: #fff;
-    border-radius: 30px;
-    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    border: solid;
+    color: var(--FO-COLOR);
     cursor: pointer;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .domov:hover,
@@ -210,9 +208,6 @@ footer {
         font-size: clamp(1.5rem, 4.5vw, 3rem) !important;
     }
     
-    .vse input, .vse textarea{
-        width: clamp(2rem, 75vw, 20rem);
-    }
 
 }
 
