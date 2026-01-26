@@ -97,6 +97,7 @@ textarea {
     border: 2px solid var(--FO-COLOR);
     border-radius: 40px;
     overflow: auto;
+    line-height: normal;
 }
 
 
@@ -139,6 +140,7 @@ textarea {
     margin: 20px 0;
     padding: 3px 0;
     text-align: center;
+    text-decoration: none;
     color: var(--FO-COLOR);
     background-color: #fff;
     border-radius: 30px;
