@@ -179,7 +179,8 @@ main {
 }
 
 .BesediloAleš{
-    font-size: clamp(0.1rem, 1.75vw, 2rem);
+    font-family: Helvetica;
+    font-size: clamp(0.5rem, 1.75vw, 2rem);
 }
 
 .OpisAleš p::first-letter {
@@ -224,6 +225,7 @@ main {
     grid-column: 1;
     letter-spacing: 1.2px;
     word-spacing: 2px;
+    font-family: Helvetica;
     font-size: clamp(1rem, 1.75vw, 2rem);
 }
 
