@@ -24,8 +24,6 @@ html {
 
 
 body {
-    font-family: Helvetica;
-    font-weight: 500;
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -180,6 +178,7 @@ main {
 
 .BesediloAleš{
     font-family: Helvetica;
+    font-weight: 500;
     font-size: clamp(0.75rem, 2.25vw, 1.75rem);
 }
 
@@ -228,6 +227,7 @@ main {
 }
 
 .BesediloSotlar{
+    font-weight: 500;
     font-size: clamp(0.75rem, 2.25vw, 1.75rem);
     font-family: Helvetica;
 }
@@ -286,6 +286,8 @@ main {
 }
 
 .BesediloMark{
+    font-family: Helvetica;
+    font-weight: 500;
     font-size: clamp(0.75rem, 2.25vw, 1.75rem);
 }
 
