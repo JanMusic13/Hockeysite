@@ -267,7 +267,7 @@ figure{
 
 .vseodMark {
     text-align: justify;
-    margin-top: 1rem;
+    margin-top: 1rem !important;
     padding: 0;
     display: grid;
     grid-row: 4;
