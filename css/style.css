@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
     font-size: 20px;
     color-scheme: white;
-    background-color: var(--BA-COLOR);
 }
 
 :root {
