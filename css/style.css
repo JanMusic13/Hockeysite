@@ -199,6 +199,7 @@ main {
     height: auto;
     width: 100%;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 /* ALEŠ - KONEC!!! */
@@ -250,6 +251,7 @@ main {
     height: auto;
     width: 100%;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 /* SOTLAR - KONEC!!! */
@@ -308,6 +310,7 @@ main {
     height: auto;
     width: 100%;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 /* MARK - KONEC!!! */
