@@ -22,6 +22,8 @@ html {
 
 
 body {
+    font-weight: 500;
+    font-family: Helvetica;
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -147,7 +149,10 @@ main {
     text-align: center;
     font-size: clamp(1rem, 7.5vw, 4rem);
 }
-
+figure{
+    margin: 0;
+    padding: 0;
+}
 /* ALEŠ */
 
 .vseodAles {
