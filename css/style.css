@@ -544,6 +544,9 @@ footer{
     .BesediloAleš, .BesediloSotlar, .BesediloMark{
         font-size: clamp(0.5rem, 3.5vw, 3rem);
     }
+    .BesediloAleš p::first-letter, .BesediloSotlar p::first-letter, .BesediloMark{
+        font-size: clamp(1rem, 4.25vw, 3.5rem);
+    }
     
     .Aleš,
     .Jure,
@@ -609,7 +612,9 @@ footer{
     .copy{
         margin-top: 2rem;
     }
-
+    .top{
+        border: 2px solid var(--FO-COLOR);
+    }
     .top:focus, .top:hover, .top:active{
         transform: none;
     }
