@@ -531,8 +531,7 @@ footer{
         font-size: 7.5px;
     }
     
-    .top,
-    .opis {
+    .top {
         margin: 0;
     }
     
@@ -548,7 +547,7 @@ footer{
     }
 
     .BesediloAleš, .BesediloSotlar, .BesediloMark{
-        font-size: clamp(0.5rem, 2.75vw, 3rem);
+        font-size: clamp(0.5rem, 3vw, 3rem);
     }
     
     .Aleš,
@@ -657,12 +656,7 @@ footer{
         font-size: 1.7rem;
     }
 
-
-    section{
-        max-height: 50vh;
-    }
     .container{
-        max-height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -749,7 +743,6 @@ footer{
     }
 
     .container{
-        max-height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
