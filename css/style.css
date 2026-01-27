@@ -717,13 +717,13 @@ footer{
     }  */
 
     .OpisAleš,
-    .Sotlar_opis {
+    .Sotlar_opis, .Markopis {
         grid-row: 2;
         grid-column: 1/-1;
     }
 
     .Aleš,
-    .Jure {
+    .Jure, .Mark {
         grid-row: 1;
         grid-column: 1/-1;
         max-width: 200px;
@@ -760,6 +760,5 @@ footer{
 @media (prefers-color-scheme: dark) {
     :root{
         --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486), hsla(0, 0%, 10%, 0.486)) !important;
-
     }
 }
