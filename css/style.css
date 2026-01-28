@@ -557,10 +557,10 @@ footer{
     }
 
     .BesediloAleš, .BesediloSotlar, .BesediloMark{
-        font-size: clamp(0.5rem, 4vw, 1.5rem);
+        font-size: clamp(0.5rem, 4vw, 1.5rem) !important;
     }
     .BesediloAleš::first-letter, .BesediloSotlar::first-letter, .BesediloMark::first-letter{
-        font-size: clamp(1rem, 4.5vw, 2rem);
+        font-size: clamp(1rem, 4.5vw, 2rem) !important;
     }
 
     tr,
