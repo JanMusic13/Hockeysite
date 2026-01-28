@@ -544,7 +544,7 @@ footer{
     .BesediloAleš, .BesediloSotlar, .BesediloMark{
         font-size: clamp(0.5rem, 3.5vw, 3rem);
     }
-    .BesediloAleš p::first-letter, .BesediloSotlar p::first-letter, .BesediloMark{
+    .BesediloAleš::first-letter, .BesediloSotlar::first-letter, .BesediloMark{
         font-size: clamp(1rem, 4.25vw, 3.5rem);
     }
     
