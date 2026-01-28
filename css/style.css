@@ -204,6 +204,7 @@ figure{
     height: auto;
     width: 100%;
     border-radius: 50%;
+    max-width: 700px;
     aspect-ratio: 1/1;
 }
 
@@ -256,6 +257,7 @@ figure{
     height: auto;
     width: 100%;
     border-radius: 50%;
+    max-width: 700px;
     aspect-ratio: 1/1;
 }
 
@@ -313,6 +315,7 @@ figure{
     height: auto;
     width: 100%;
     border-radius: 50%;
+    max-width: 700px;
 }
 
 /* MARK - KONEC!!! */
@@ -542,8 +545,6 @@ footer{
     .Jure img, .Aleš img, .Mark img {
         max-width: 150px;
     }
-
-    
     
     .Aleš,
     .Jure,
@@ -552,6 +553,13 @@ footer{
         grid-column: 1/-1;
         max-width: 200px;
         margin: 0 auto;
+    }
+
+    .BesediloAleš, .BesediloSotlar, .BesediloMark{
+        font-size: clamp(0.5rem, 3.25vw, 1.5rem);
+    }
+    .BesediloAleš::first-letter, .BesediloSotlar::first-letter, .BesediloMark::first-letter{
+        font-size: clamp(1rem, 4vw, 2rem);
     }
 
     tr,
