@@ -273,6 +273,7 @@ figure{
     grid-template-columns: 1fr 2fr;
     width: 100%;
     border-top: var(--BORDER);
+    grid-template-rows: auto;
 }
 
 .Markopis {
@@ -287,6 +288,7 @@ figure{
 
 .BesediloMark{
     font-family: Helvetica;
+    grid-row: 1;
     font-weight: 400;
     font-size: clamp(0.75rem, 2.25vw, 1.75rem);
 }
@@ -298,6 +300,7 @@ figure{
 .Mark {
     display: grid;
     grid-column: 1;
+    grid-row: 1;
     justify-content: center;
     align-items: center;
     padding: 10px;
