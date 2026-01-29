@@ -17,9 +17,8 @@ html {
     --FO-COLOR: black;
     --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486), hsla(0, 0%, 10%, 0.486));
     --FO-FAMILY-HEADING: Arial, Helvetica;
-    --BORDER: 4px solid var(--FO-COLOR)
+    --BORDER: 4px solid var(--FO-COLOR);
 }
-
 
 body {
     font-weight: 400;
@@ -33,9 +32,7 @@ body {
     color: var(--FO-COLOR);
 }
 
-
-
-strong{
+strong {
     font-weight: 550;
 }
 
@@ -45,21 +42,22 @@ img {
 
 /* ROOT-KONEC!!! */
 
-.regi{
+.regi {
     display: none;
 }
 
 /* ZAČETNI POGLED, SLIKA, LINKI */
-.btn_show{
+.btn_show {
     display: none;
 }
+
 .container {
     display: flex;
     grid-row: 1;
     grid-column: 1/-1;
     width: 100%;
     height: 100vh;
-    background-image: url('../img/Main.webp');
+    background-image: url("../img/Main.webp");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -112,7 +110,6 @@ ul a:focus {
     transform: scale(1.2);
 }
 
-
 /* ZAČETNI POGLED, SLIKA, LINKI - KONEC!!!*/
 
 /* MAIN */
@@ -125,7 +122,6 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
 }
-
 
 /* O NAS */
 
@@ -149,10 +145,12 @@ main {
     text-align: center;
     font-size: clamp(1rem, 7.5vw, 4rem);
 }
-figure{
+
+figure {
     margin: 0;
     padding: 0;
 }
+
 /* ALEŠ */
 
 .vseodAles {
@@ -179,7 +177,7 @@ figure{
     font-size: 1.5rem;
 }
 
-.BesediloAleš{
+.BesediloAleš {
     font-family: Helvetica;
     font-weight: 400;
     font-size: clamp(0.75rem, 2.25vw, 1.75rem);
@@ -231,12 +229,11 @@ figure{
     word-spacing: 2px;
 }
 
-.BesediloSotlar{
+.BesediloSotlar {
     font-weight: 400;
     font-size: clamp(0.75rem, 2.25vw, 1.75rem);
     font-family: Helvetica;
 }
-
 
 .Sotlar_opis p::first-letter {
     font-size: clamp(1rem, 3vw, 2.25rem);
@@ -263,9 +260,7 @@ figure{
 
 /* SOTLAR - KONEC!!! */
 
-
 /* MARK */
-
 
 .vseodMark {
     text-align: justify;
@@ -288,7 +283,7 @@ figure{
     word-spacing: 2px;
 }
 
-.BesediloMark{
+.BesediloMark {
     font-family: Helvetica;
     grid-row: 1;
     font-weight: 400;
@@ -325,7 +320,7 @@ figure{
 
 /* GALERIJA */
 
-.Galerija{
+.Galerija {
     width: 100%;
     display: grid;
     background-image: var(--BA-COLOR);
@@ -335,13 +330,13 @@ figure{
     border-bottom: var(--BORDER);
     padding-bottom: 2rem;
 }
+
 .Galerija h2 {
     font-family: Arial, Helvetica;
     text-align: center;
     font-size: clamp(1rem, 7.5vw, 4rem);
     margin: 1rem;
 }
-
 
 /*section{
     margin: 0;
@@ -351,8 +346,6 @@ video{
     margin: 0;
     max-width: 100%;
 }*/
-
-
 
 .slike {
     display: grid;
@@ -364,8 +357,10 @@ video{
     padding: 1rem;
 }
 
-.slike img, .slike video {                   
-    max-width: 500px;         /*Rabm lepso razporeditev slik !!!!!!!!!!!!!!!!!!!!!!!!!*/
+.slike img,
+.slike video {
+    max-width: 500px;
+    /*Rabm lepso razporeditev slik !!!!!!!!!!!!!!!!!!!!!!!!!*/
     width: 100%;
     border-radius: 5%;
     /*max-width: 40vw;*/
@@ -376,11 +371,10 @@ video{
     transition: transform 0.3s ease-in-out;
 }
 
-.slike img:hover, .slike video:hover{
+.slike img:hover,
+.slike video:hover {
     transform: scale(1.05);
 }
-
-
 
 /* GALERIJA - KONEC!!! */
 
@@ -407,14 +401,13 @@ td {
     text-align: center;
 }
 
-
 td {
     background-color: rgba(59, 255, 255, 0.329);
     font-family: "Arial", Helvetica;
     font-weight: 400;
 }
 
-.zadnja td{
+.zadnja td {
     padding: 10px !important;
 }
 
@@ -434,16 +427,16 @@ th:last-child {
     border-radius: 0 0 15px 0;
 }
 
-.zadnja td{
+.zadnja td {
     width: auto;
 }
 
-.Čas {          /*TITLE TABELA*/
+.Čas {
+    /*TITLE TABELA*/
     font-family: var(--FO-FAMILY-HEADING);
     font-size: clamp(1rem, 7.5vw, 4rem);
     text-align: center;
 }
-
 
 th {
     font-family: "Arial", Helvetica;
@@ -452,7 +445,6 @@ th {
 }
 
 /* TABELA - KONEC!!! */
-
 
 /* MAIN - KONEC!!! */
 
@@ -489,7 +481,7 @@ footer {
     height: auto;
 }
 
-.top{
+.top {
     margin: 40px;
     display: inline-block;
     border: 3px solid var(--FO-COLOR);
@@ -498,9 +490,11 @@ footer {
     text-decoration: none;
     color: var(--FO-COLOR);
     font-size: 3rem;
-    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition:
+        transform 0.3s ease-in-out,
+        font-size 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
 }
-
 
 .top:hover,
 .top:focus {
@@ -508,13 +502,12 @@ footer {
     font-size: 3.25rem;
 }
 
-
 .copy {
     color: var(--FO-COLOR);
     font-size: clamp(10px, 2rem, 4rem);
 }
 
-footer{
+footer {
     padding: 0 0 10px;
 }
 
@@ -524,29 +517,28 @@ footer{
 
 /* MEDIA */
 
-
-
-@media (max-width: 600px){
-
-    html{
+@media (max-width: 600px) {
+    html {
         font-size: 10px;
     }
-    
+
     .top {
         margin: 0;
     }
-    
+
     .OpisAleš,
     .Sotlar_opis,
     .Markopis {
         grid-row: 2;
         grid-column: 1/-1;
     }
-    
-    .Jure img, .Aleš img, .Mark img {
+
+    .Jure img,
+    .Aleš img,
+    .Mark img {
         max-width: 150px;
     }
-    
+
     .Aleš,
     .Jure,
     .Mark {
@@ -556,10 +548,15 @@ footer{
         margin: 0 auto;
     }
 
-    .BesediloAleš, .BesediloSotlar, .BesediloMark{
+    .BesediloAleš,
+    .BesediloSotlar,
+    .BesediloMark {
         font-size: clamp(0.5rem, 4vw, 3.5rem) !important;
     }
-    .BesediloAleš::first-letter, .BesediloSotlar::first-letter, .BesediloMark::first-letter{
+
+    .BesediloAleš::first-letter,
+    .BesediloSotlar::first-letter,
+    .BesediloMark::first-letter {
         font-size: clamp(1rem, 4.5vw, 4rem) !important;
     }
 
@@ -569,11 +566,11 @@ footer{
         border: 1.5px solid var(--FO-COLOR);
     }
 
-
-    section{
+    section {
         max-height: 50vh;
     }
-    .container{
+
+    .container {
         max-height: 50vh;
         display: flex;
         align-items: center;
@@ -581,14 +578,15 @@ footer{
         flex-flow: column;
     }
 
-    .hide{
+    .hide {
         display: none;
     }
-    .slike{
-        grid-template-columns: repeat(2, 1fr)
+
+    .slike {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .regi{
+    .regi {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -596,12 +594,12 @@ footer{
         margin-top: 5rem;
     }
 
-    .regi p{
+    .regi p {
         color: white;
         font-size: clamp(2rem, 4.5vw, 3rem);
     }
 
-    .regi a{
+    .regi a {
         font-weight: 500;
         text-decoration: none;
         color: whitesmoke;
@@ -611,30 +609,31 @@ footer{
         transition: transform 0.3s ease-in-out;
     }
 
-    .regi a:hover{
+    .regi a:hover {
         transform: scale(1.2);
     }
 
-    .copy{
+    .copy {
         margin-top: 2rem;
     }
-    .top{
+
+    .top {
         border: 2px solid var(--FO-COLOR);
     }
-    .top:focus, .top:hover, .top:active{
+
+    .top:focus,
+    .top:hover,
+    .top:active {
         transform: none;
     }
 }
 
 /* ZA TELEFON DELA KR UREDU, ZA TABLICO PA OSTALO PA ŠE NE */
 
-
-
 @media (min-width: 601px) and (max-width: 768px) {
     html {
         font-size: 12.5px;
     }
-    
 
     .OpisAleš,
     .Sotlar_opis,
@@ -644,8 +643,7 @@ footer{
     }
 
     .Aleš,
-    .Jure
-    .Mark {
+    .Jure .Mark {
         grid-row: 1;
         grid-column: 1/-1;
         max-width: 200px;
@@ -657,24 +655,23 @@ footer{
     td {
         border: 1.5px solid var(--FO-COLOR);
     }
-    .opis{
+
+    .opis {
         font-size: 1.7rem;
     }
 
-    .container{
+    .container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: column;
     }
 
-
-    .hide{
+    .hide {
         display: none;
     }
 
-
-    .regi{
+    .regi {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -682,13 +679,13 @@ footer{
         margin-top: 3rem;
     }
 
-    .regi p{
+    .regi p {
         color: white;
         font-size: clamp(1.5rem, 4.5vw, 3rem);
         font-weight: 500;
     }
 
-    .regi a{
+    .regi a {
         font-weight: 500;
         text-decoration: none;
         color: whitesmoke;
@@ -698,18 +695,17 @@ footer{
         transition: transform 0.3s ease-in-out;
     }
 
-    .regi a:hover{
+    .regi a:hover {
         transform: scale(1.2);
     }
-
-
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
     html {
         font-size: 15px;
     }
-/*TUKI NE BO TEGA TO DT STRAN TUKI*/
+
+    /*TUKI NE BO TEGA TO DT STRAN TUKI*/
     /*.btn_show{
         display: block;
         position: fixed;
@@ -728,13 +724,15 @@ footer{
     }  */
 
     .OpisAleš,
-    .Sotlar_opis, .Markopis {
+    .Sotlar_opis,
+    .Markopis {
         grid-row: 2;
         grid-column: 1/-1;
     }
 
     .Aleš,
-    .Jure, .Mark {
+    .Jure,
+    .Mark {
         grid-row: 1;
         grid-column: 1/-1;
         max-width: 200px;
@@ -747,29 +745,26 @@ footer{
         border: 1.5px solid var(--FO-COLOR);
     }
 
-    .container{
+    .container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: column;
     }
 
-    nav ul{
+    nav ul {
         margin-top: 2rem;
         gap: 30px;
     }
 
-    .slike{
+    .slike {
         grid-template-columns: repeat(3, 1fr);
     }
-
 }
 
-
-
-
 @media (prefers-color-scheme: dark) {
-    :root{
-        --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486), hsla(0, 0%, 10%, 0.486)) !important;
+    :root {
+        --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486),
+                hsla(0, 0%, 10%, 0.486)) !important;
     }
 }
