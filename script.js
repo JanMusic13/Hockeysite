@@ -6,6 +6,8 @@ const observer = new IntersectionObserver((entries) => {
     else {
         entries[0].target.classList.remove("show")
     }
-}, {})
+}, {
+    rootMargin: "0px 0px 0px 500px"
+})
 
 observer.observe(slike)
