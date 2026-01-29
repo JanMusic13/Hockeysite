@@ -360,20 +360,24 @@ video{
 .slike img,
 .slike video {
     max-width: 500px;
-    /*Rabm lepso razporeditev slik !!!!!!!!!!!!!!!!!!!!!!!!!*/
     width: 100%;
     border-radius: 5%;
-    /*max-width: 40vw;*/
     height: auto;
     max-height: 600px;
     object-fit: cover;
-    /*object-position: left;*/
-    transition: transform 0.3s ease-in-out;
+    translate: -100%;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .slike img:hover,
 .slike video:hover {
     transform: scale(1.05);
+}
+
+.slike.show img{
+    translate: 0;
+    opacity: 1;
 }
 
 /* GALERIJA - KONEC!!! */
