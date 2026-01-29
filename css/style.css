@@ -46,12 +46,16 @@ img {
     display: none;
 }
 
+
 /* ZAČETNI POGLED, SLIKA, LINKI */
 .btn_show {
     display: none;
 }
 
+
+
 .container {
+    position: relative;
     display: flex;
     grid-row: 1;
     grid-column: 1/-1;
@@ -109,6 +113,36 @@ ul a:focus {
     text-decoration: underline;
     transform: scale(1.2);
 }
+
+
+/* INSTAGRAM IKONA */
+
+.Instagram_link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    width: clamp(35px, 5vw, 100px);
+    height: auto;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.Instagram_link:hover {
+    transform: scale(1.2);
+}
+
+
+.Instagram_link img {
+    display: block;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+
+
+/* INSTAGRAM IKONA KONEC*/
+
 
 /* ZAČETNI POGLED, SLIKA, LINKI - KONEC!!!*/
 
@@ -377,7 +411,7 @@ video{
     scale: 1.05;
 }
 
-.slike img.show{
+.slike img.show {
     translate: 0 0;
     opacity: 1;
     rotate: 0deg;
