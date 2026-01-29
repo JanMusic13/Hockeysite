@@ -578,7 +578,7 @@ footer {
     }
 
     .container {
-        max-height: 50vh;
+        max-height: 50dvh;
         display: flex;
         align-items: center;
         justify-content: center;
