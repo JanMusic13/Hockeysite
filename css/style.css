@@ -359,25 +359,28 @@ video{
 
 .slike img,
 .slike video {
+    aspect-ratio: 1/1;
     max-width: 500px;
     width: 100%;
     border-radius: 5%;
     height: auto;
-    max-height: 600px;
-    object-fit: cover;
-    translate: -100%;
+    object-fit: contain;
+    translate: -100% 0;
+    rotate: -90deg;
+    scale: 1;
     opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: scale 0.3s ease-in-out, opacity 0.75s ease-in-out, translate 0.75s ease-in-out, rotate 0.5s ease-in-out;
 }
 
-.slike img:hover,
+.slike img.show:hover,
 .slike video:hover {
-    transform: scale(1.05);
+    scale: 1.05;
 }
 
-.slike.show img{
-    translate: 0;
+.slike img.show{
+    translate: 0 0;
     opacity: 1;
+    rotate: 0deg;
 }
 
 /* GALERIJA - KONEC!!! */
