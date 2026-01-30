@@ -95,7 +95,7 @@ form {
 textarea {
     font-family: "Lexend";
     resize: none;
-    font-size: clamp(0.5rem, 3vw, 2rem) !important;
+    font-size: clamp(0.5rem, 3.5vw, 2rem) !important;
     padding: 1.5rem 2rem;
     border: 2px solid var(--FO-COLOR);
     border-radius: 40px;
