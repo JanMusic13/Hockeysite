@@ -119,8 +119,8 @@ ul a:focus {
 
 .Instagram_link {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 22.5px;
+    right: 22.5px;
     display: inline-block;
     height: auto;
     z-index: 10;
@@ -129,8 +129,8 @@ ul a:focus {
 
 .WhatsAPP_link {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    bottom: 22.5px;
+    left: 22.5px;
     display: inline-block;
     height: auto;
     z-index: 10;
