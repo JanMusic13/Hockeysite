@@ -119,10 +119,19 @@ ul a:focus {
 
 .Instagram_link {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     display: inline-block;
-    width: clamp(35px, 5vw, 100px);
+    height: auto;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.WhatsAPP_link {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: inline-block;
     height: auto;
     z-index: 10;
     transition: all 0.3s ease-in-out;
@@ -132,11 +141,22 @@ ul a:focus {
     transform: scale(1.2) rotate(10deg);
 }
 
+.WhatsAPP_link:hover {
+    transform: scale(1.2) rotate(10deg);
+}
 
 .Instagram_link img {
     display: block;
     height: auto;
     aspect-ratio: 1/1;
+    width: clamp(35px, 4.5vw, 100px);
+}
+
+.WhatsAPP_link img {
+    display: block;
+    height: auto;
+    aspect-ratio: 1/1;
+    width: clamp(35px, 4.5vw, 100px);
 }
 
 
