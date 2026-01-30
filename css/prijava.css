@@ -16,7 +16,7 @@ html {
 :root {
     color-scheme: light;
     --FO-COLOR: black;
-    --BA-COLOR: radial-gradient(#E3E3E3, rgba(0, 0, 0, 0.486));
+    --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486), hsla(0, 0%, 10%, 0.486));
     --FO-FAMILY-HEADING: Arial, Helvetica;
     --FONT-LINK: "Funnel Sans";
     --MARGIN-INPUT: 40px 0;
