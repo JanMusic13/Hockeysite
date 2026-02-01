@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth;
     font-size: 20px;
     color: var(--FO-COLOR);
-    background-image: var(--BA-COLOR);
 }
 
 :root {
