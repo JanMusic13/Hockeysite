@@ -25,8 +25,8 @@ body {
     font-family: "Lexend";
     font-weight: 350;
     width: 100%;
-    min-height: 100vh;
     min-height: 100dvh;
+    min-height: 100vh;
     display: grid;
     background-image: var(--BA-COLOR);
 }

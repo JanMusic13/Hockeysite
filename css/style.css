@@ -365,7 +365,7 @@ figure {
     width: 100%;
     border-radius: 50%;
     max-width: 700px;
-    aspect-ratio: 1440/1403;
+    aspect-ratio: 1/1;
 }
 
 /* MARK - KONEC!!! */
@@ -391,8 +391,6 @@ figure {
     font-size: clamp(1rem, 7.5vw, 4rem);
     margin: 1rem;
 }
-
-
 
 .slike {
     display: grid;
