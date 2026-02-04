@@ -24,7 +24,7 @@ body {
     font-weight: 400;
     font-family: Helvetica;
     width: 100%;
-    min-height: 100dvh;
+    min-height: 100svh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -395,7 +395,7 @@ figure {
 .slike {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: auto;
     gap: 3rem;
     padding: 1rem;
     justify-items: center;
@@ -421,7 +421,7 @@ figure {
     scale: 1.05;
 }
 
-.slike img.show {
+.slike img.show, .slike video.show{
     translate: 0 0;
     opacity: 1;
     rotate: 0deg;
@@ -619,7 +619,7 @@ footer {
 
 
     .container {
-        max-height: 50dvh;
+        max-height: 50svh;
         display: flex;
         align-items: center;
         justify-content: center;

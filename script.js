@@ -1,4 +1,4 @@
-const slike = document.querySelectorAll('.slike img');
+const slike = document.querySelectorAll('.slike img, .slike video');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
