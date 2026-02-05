@@ -28,7 +28,6 @@ body {
     min-height: 100dvh;
     display: grid;
     background-image: var(--BA-COLOR);
-    background-size: 100% 115lvh;
 }
 
 header {
