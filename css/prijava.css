@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth;
     font-size: 20px;
     color: var(--FO-COLOR);
+    background-image: var(--BA-COLOR);
 }
 
 :root {
@@ -27,7 +28,6 @@ body {
     width: 100%;
     min-height: 100svh;
     display: grid;
-    background-image: var(--BA-COLOR);
 }
 
 header {
