@@ -27,8 +27,11 @@ body {
     font-weight: 350;
     width: 100%;
     min-height: 100vh;
-    min-height: 100svh;
+    min-height: 100dvh;
     background-image: var(--BA-COLOR);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
