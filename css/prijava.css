@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth;
     font-size: 20px;
     color: var(--FO-COLOR);
-    background-image: var(--BA-COLOR);
 }
 
 :root {
@@ -23,11 +22,13 @@ html {
 }
 
 body {
+    display: grid;
     font-family: "Lexend";
     font-weight: 350;
     width: 100%;
+    min-height: 100vh;
     min-height: 100svh;
-    display: grid;
+    background-image: var(--BA-COLOR);
 }
 
 header {
