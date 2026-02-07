@@ -438,6 +438,7 @@ figure {
 }
 .slike video{
     max-width: 600px;
+    aspect-ratio: 9/16;
 }
 .slike img.show:hover,
 .slike video:hover {
