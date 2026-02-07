@@ -405,6 +405,15 @@ figure {
 .slika_4{
     grid-area: slika_4;
 }
+.slika_5{
+    grid-area: slika_5;
+}
+.slika_6{
+    grid-area: slika_6;
+}
+.slika_7{
+    grid-area: slika_7;
+}
 .video_1{
     grid-area: video_1;
 }
@@ -414,8 +423,8 @@ figure {
     grid-auto-columns: auto;
     grid-auto-rows: auto;
     grid-template-areas: 
-    "slika_1 slika_2 video_1"
-    "slika_3 slika_4 video_1";
+    "slika_1 slika_1 slika_2 video_1"
+    "slika_3 slika_4 slika_5 video_1";
     gap: 2rem;
     padding: 1rem;
     place-content: center;
@@ -425,8 +434,8 @@ figure {
 .slike video {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     object-fit: cover;
+    border-radius: 10px;
     translate: -75% 0;
     rotate: -90deg;
     scale: 1;
@@ -434,11 +443,15 @@ figure {
     transition: scale 0.3s ease-in-out, opacity 0.75s ease-in-out, translate 0.75s ease-in-out, rotate 0.5s ease-in-out;
 }
 .slike img{
-    max-width: 500px;
+    max-height: 500px;
 }
+.slike img:not(:first-child){
+    aspect-ratio: 1/1;
+}
+
 .slike video{
-    max-width: 600px;
     aspect-ratio: 9/16;
+    max-width: 600px;
 }
 .slike img.show:hover,
 .slike video:hover {
@@ -657,9 +670,10 @@ footer {
 
     .slike {
         grid-template-areas: 
-        "slika_1 video_1"
         "slika_2 video_1"
-        "slika_3 slika_4";
+        "slika_3 video_1"
+        "slika_1 slika_1"
+        "slika_4 slika_5";
     }
 
     .regi {
@@ -741,6 +755,12 @@ footer {
         align-items: center;
         justify-content: center;
         flex-flow: column;
+    }
+
+    .slike{
+        grid-template-areas: 
+        "slika_2 slika_3 slika_4 video_1"
+        "slika_1 slika_1 slika_5 video_1";
     }
 
     .hide {
@@ -833,9 +853,7 @@ footer {
         gap: 30px;
     }
 
-    .slike {
-        grid-template-columns: repeat(3, 1fr);
-    }
+
 }
 
 @media (prefers-color-scheme: dark) {
