@@ -239,7 +239,7 @@ figure {
 }
 
 .OpisAleš p::first-letter {
-    font-size: clamp(1rem, 3vw, 2.25rem);
+    font-size: clamp(1.25rem, 3.25vw, 2.5rem);
 }
 
 .Aleš {
@@ -291,7 +291,7 @@ figure {
 }
 
 .Sotlar_opis p::first-letter {
-    font-size: clamp(1rem, 3vw, 2.25rem);
+    font-size: clamp(1.25rem, 3.25vw, 2.5rem);
 }
 
 .Jure {
@@ -346,7 +346,7 @@ figure {
 }
 
 .BesediloMark::first-letter {
-    font-size: clamp(1rem, 3vw, 2.25rem);
+    font-size: clamp(1.25rem, 3.25vw, 2.5rem);
 }
 
 .Mark {
@@ -632,7 +632,7 @@ footer {
     .BesediloAleš::first-letter,
     .BesediloSotlar::first-letter,
     .BesediloMark::first-letter {
-        font-size: clamp(1rem, 4.5vw, 4rem) !important;
+        font-size: clamp(1rem, 5vw, 4.5rem) !important;
     }
 
     tr,
