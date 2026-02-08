@@ -822,9 +822,3 @@ footer {
 
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --BA-COLOR: radial-gradient(hsla(0, 0%, 60%, 0.486),
-                hsla(0, 0%, 10%, 0.486)) !important;
-    }
-}
