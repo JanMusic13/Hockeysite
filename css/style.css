@@ -395,8 +395,8 @@ figure {
 
 .slike {
     display: grid;
-    min-height: 100vh;
-    min-height: 100svh;
+    min-height: 10vh;
+    min-height: 10svh;
     width: 100%;
     grid-auto-rows: auto;
     grid-auto-columns: auto;
