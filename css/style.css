@@ -12,6 +12,9 @@ html {
     color-scheme: white;
 }
 
+html, body{
+    overflow-x: hidden;
+}
 :root {
     color-scheme: light;
     --FO-COLOR: black;
