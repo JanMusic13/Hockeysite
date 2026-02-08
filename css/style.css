@@ -420,6 +420,8 @@ figure {
 
 .slike {
     display: grid;
+    height: fit-content;
+    width: 100%;
     grid-auto-rows: auto;
     grid-auto-columns: auto;
     grid-template-areas: 
@@ -427,7 +429,8 @@ figure {
     "slika_3 slika_4 slika_5 video_1";
     gap: 2rem;
     padding: 1rem;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .slike img,
@@ -445,12 +448,8 @@ figure {
 }
 .slike img{
     max-height: 500px;
-    aspect-ratio: 1 / 1;
 }
 
-.slike img:first-child{
-    aspect-ratio: 16/9 !important;
-}
 
 .slike video{
     align-self: stretch;
