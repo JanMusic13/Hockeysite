@@ -107,6 +107,7 @@ ul a {
     color: whitesmoke;
     display: inline-block;
     transition: transform 0.3s ease-in-out;
+    will-change: transform;
 }
 
 ul a:hover,
