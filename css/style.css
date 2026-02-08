@@ -445,12 +445,11 @@ figure {
 }
 .slike img{
     max-height: 500px;
+    aspect-ratio: 1 / 1;
 }
-.slike img:not(:first-child){
-    aspect-ratio: 1/1;
-}
+
 .slike img:first-child{
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/9 !important;
 }
 
 .slike video{
