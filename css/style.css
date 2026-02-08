@@ -421,7 +421,7 @@ figure {
 .slike {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "slika_1 slika_1 slika_2 video_1"
     "slika_3 slika_4 slika_5 video_1";
