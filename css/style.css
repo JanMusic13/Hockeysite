@@ -170,6 +170,7 @@ ul a:focus {
 /* MAIN */
 
 main {
+    padding-top: env(safe-area-inset-top);
     display: grid;
     flex-direction: column;
     grid-column: 1/-1;
@@ -192,11 +193,12 @@ main {
 }
 
 .h2_onas {
+    position: relative;
+    z-index: 10;
     grid-row: 1;
     font-family: var(--FO-FAMILY-HEADING);
     margin: 10px 0 0 0;
     grid-column: 1/-1;
-    display: grid;
     text-align: center;
     font-size: clamp(1rem, 7.5vw, 4rem);
 }
@@ -381,7 +383,6 @@ figure {
     background-image: var(--BA-COLOR);
     grid-column: 1/-1;
     grid-row: 2;
-    /*padding: 0 2.5rem 1.5rem 2.5rem;*/
     border-bottom: var(--BORDER);
     padding-bottom: 2rem;
 }
@@ -432,6 +433,7 @@ figure {
 
 .slike img,
 .slike video {
+    min-height: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -450,6 +452,8 @@ figure {
 }
 
 .slike video{
+    align-self: stretch;
+    display: block;
     aspect-ratio: 9/16;
     max-width: 500px;
     height: 100%;
@@ -802,24 +806,6 @@ footer {
     html {
         font-size: 15px;
     }
-
-    /*TUKI NE BO TEGA TO DT STRAN TUKI*/
-    /*.btn_show{
-        display: block;
-        position: fixed;
-        bottom: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3rem;
-        background: rgba(225, 255, 255, 0.8);
-        padding: 14px 28px;
-        border-radius: 999px;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        color: black;
-        text-decoration: none;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    }  */
 
     .OpisAleš,
     .Sotlar_opis,
