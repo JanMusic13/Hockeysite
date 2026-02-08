@@ -106,7 +106,6 @@ ul a {
     color: whitesmoke;
     display: inline-block;
     transition: transform 0.3s ease-in-out;
-    will-change: transform;
 }
 
 ul a:hover,
@@ -421,8 +420,8 @@ figure {
 
 .slike {
     display: grid;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
     grid-template-areas: 
     "slika_1 slika_1 slika_2 video_1"
     "slika_3 slika_4 slika_5 video_1";
@@ -678,6 +677,7 @@ footer {
     }
 
     .slike {
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "slika_2 video_1"
         "slika_3 video_1"
