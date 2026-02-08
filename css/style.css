@@ -420,8 +420,8 @@ figure {
 
 .slike {
     display: grid;
-    grid-template-columns: repeat(4, 500px);
-    grid-template-rows: minmax(50px, 500px);
+    grid-template-columns: repeat(4, minmax(50px, 500px));
+    grid-template-rows: auto;
     grid-template-areas: 
     "slika_1 slika_1 slika_2 video_1"
     "slika_3 slika_4 slika_5 video_1";
