@@ -53,8 +53,6 @@ img {
     display: none;
 }
 
-
-
 .container {
     position: relative;
     display: flex;
@@ -115,17 +113,7 @@ ul a:focus {
 }
 
 
-/* INSTAGRAM IKONA */
-
-.Instagram_link {
-    position: absolute;
-    bottom: 22.5px;
-    right: 22.5px;
-    display: inline-block;
-    height: auto;
-    z-index: 10;
-    transition: all 0.3s ease-in-out;
-}
+/* WHATSAPP IKONA */
 
 .WhatsAPP_link {
     position: absolute;
@@ -137,19 +125,8 @@ ul a:focus {
     transition: all 0.3s ease-in-out;
 }
 
-.Instagram_link:hover {
-    transform: scale(1.2) rotate(10deg);
-}
-
 .WhatsAPP_link:hover {
     transform: scale(1.2) rotate(10deg);
-}
-
-.Instagram_link img {
-    display: block;
-    height: auto;
-    aspect-ratio: 1/1;
-    width: clamp(35px, 4.5vw, 100px);
 }
 
 .WhatsAPP_link img {
@@ -159,9 +136,7 @@ ul a:focus {
     width: clamp(35px, 4.5vw, 100px);
 }
 
-
-
-/* INSTAGRAM IKONA KONEC*/
+/* WHATSAPP IKONA KONEC*/
 
 
 /* ZAČETNI POGLED, SLIKA, LINKI - KONEC!!!*/
