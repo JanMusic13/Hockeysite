@@ -641,14 +641,16 @@ footer {
 
 
     .container {
-        max-height: 50vh;
-        max-height: 50svh;
+        height: 50vh;
+        height: 50svh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: column;
     }
-    
+    .image{
+        height: 100%;
+    }
     .hide {
         display: none;
     }
