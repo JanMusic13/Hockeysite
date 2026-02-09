@@ -12,8 +12,6 @@ html {
     color-scheme: white;
 }
 
-
-
 :root {
     color-scheme: light;
     --FO-COLOR: black;
@@ -651,11 +649,6 @@ footer {
         flex-flow: column;
     }
     
-    .image{
-        max-height: 50vh;
-        max-height: 50svh;
-    }
-
     .hide {
         display: none;
     }
