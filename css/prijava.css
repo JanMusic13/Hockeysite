@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@375&display=swap');
 
 * {
     margin: 0;
@@ -24,7 +24,7 @@ html {
 body {
     display: grid;
     font-family: "Lexend";
-    font-weight: 350;
+    font-weight: 375;
     width: 100%;
     min-height: 100vh;
     min-height: 100dvh;
@@ -41,8 +41,8 @@ header {
 }
 
 h1 {
+    font-weight: 375;
     text-align: center;
-    font-weight: 400;
     font-size: clamp(2rem, 4vw, 5rem);
     margin-top: clamp(0.5rem, 2vw, 2rem);
 }
