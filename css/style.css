@@ -79,8 +79,7 @@ img {
     flex-direction: column;
     background-color: hsla(0, 0%, 0%, 0.5);
     width: 100%;
-    height: 100vh;
-    height: 100svh;
+
     grid-row: inherit;
     grid-column: inherit;
 }
@@ -650,10 +649,7 @@ footer {
         justify-content: center;
         flex-flow: column;
     }
-    .image{
-        max-height: 50vh;
-        max-height: 50svh;
-    }
+    
 
     .hide {
         display: none;
