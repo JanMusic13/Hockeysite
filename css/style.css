@@ -396,7 +396,6 @@ figure {
     grid-area: video_1;
 }
 
-
 .slike {
     display: grid;
     min-height: 10vh;
