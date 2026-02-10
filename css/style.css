@@ -649,7 +649,8 @@ footer {
         flex-flow: column;
     }
     .image{
-        height: 100%;
+        height: 50vh;
+        height: 50svh;
     }
     .hide {
         display: none;
