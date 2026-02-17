@@ -61,14 +61,17 @@ img {
     width: 100%;
     height: 100vh;
     height: 100svh;
-    background-image: url("../img/Main.webp");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
     border-bottom: var(--BORDER);
     flex-wrap: wrap;
 }
-
+#mainImage{
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
 .image {
     display: flex;
     justify-content: center;
