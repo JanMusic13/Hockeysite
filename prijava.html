@@ -49,19 +49,24 @@
         <form action="https://formspree.io/f/xojjowvq" method="post">
             <section class="vse">
 
+                <input type="hidden" name="_subject" value="Nova prijava - MS Hockey">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_replyto" value="">
+                <input type="text" name="_gotcha" style="display: none;">
+
                 <label class="mailLabel labl" for="email_starsa">E-mail: </label>
-                <input type="email" class="mail" name="E-mail" placeholder="aaa@gmail.com" id="email_starsa"
+                <input type="email" class="mail" name="email" placeholder="aaa@gmail.com" id="email_starsa"
                     autocomplete="email">
 
                 <label class="teleLabel labl" for="phone_starsa">Tel. št.: </label>
-                <input type="tel" class="tele" name="Phone" placeholder="000-000-000" id="phone_starsa"
+                <input type="tel" class="tele" name="phone" placeholder="000-000-000" id="phone_starsa"
                     autocomplete="tel">
 
                 <label class="starostLabel labl" for="date_otroka">Datum rojstva otroka: </label>
-                <input type="date" class="starost" name="Date" id="date_otroka" autocomplete="off">
+                <input type="date" class="starost" name="date" id="date_otroka" autocomplete="off">
 
                 <label class="sporociloLabel labl" for="sporocilo_starsa">Vprašanja: </label>
-                <textarea class="sporocilo" name="Sporočilo" id="sporocilo_starsa" autocomplete="off"></textarea>
+                <textarea class="sporocilo" name="message" id="sporocilo_starsa" autocomplete="off"></textarea>
 
                 <button type="submit" class="submit" id="submit">Pošlji</button>
             </section>
