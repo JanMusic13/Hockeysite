@@ -144,6 +144,29 @@ ul a:focus {
 
 /* WHATSAPP IKONA KONEC*/
 
+/* INSTAGRAM IKONA*/
+.Instagram_link {
+    position: absolute;
+    bottom: 22.5px;
+    right: 22.5px;
+    display: inline-block;
+    height: auto;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.Instagram_link:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.Instagram_link img {
+    display: block;
+    height: auto;
+    aspect-ratio: 1/1;
+    width: clamp(35px, 4.5vw, 100px);
+}
+
+/* INSTAGRAM IKONA KONEC*/
 
 /* ZAČETNI POGLED, SLIKA, LINKI - KONEC!!!*/
 
