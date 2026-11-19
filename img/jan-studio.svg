@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Electric Cyan to Purple Neon Gradient matching the logo style -->
+    <linearGradient id="neonGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="45%" stop-color="#7000FF" />
+      <stop offset="100%" stop-color="#FF007B" />
+    </linearGradient>
+
+    <!-- Glowing effect filters for neon aesthetic -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur1" />
+      <feGaussianBlur stdDeviation="24" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Centered Icon Group inside a square canvas with transparent background -->
+  <g transform="translate(300, 300)">
+    
+    <!-- Outer Ambient Glow -->
+    <g filter="url(#neonGlow)" opacity="0.65">
+      <!-- Left Bracket '<' -->
+      <path d="M -90 -95 L -170 -40 L -90 15" fill="none" stroke="url(#neonGrad)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+      
+      <!-- Center Integrated 'J' + Slash '/' -->
+      <path d="M 70 -140 L -30 40 C -45 67, -75 80, -105 70 C -130 62, -145 40, -140 15" fill="none" stroke="url(#neonGrad)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+      
+      <!-- Right Bracket '>' -->
+      <path d="M 130 -95 L 210 -40 L 130 15" fill="none" stroke="url(#neonGrad)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Crisp Sharp Foreground Icon Vectors -->
+    <g>
+      <!-- Left Bracket '<' -->
+      <path d="M -90 -95 L -170 -40 L -90 15" fill="none" stroke="url(#neonGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Center Integrated 'J' + Slash '/' -->
+      <path d="M 70 -140 L -30 40 C -45 67, -75 80, -105 70 C -130 62, -145 40, -140 15" fill="none" stroke="url(#neonGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Right Bracket '>' -->
+      <path d="M 130 -95 L 210 -40 L 130 15" fill="none" stroke="url(#neonGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Tech Precision Dots -->
+    <circle cx="70" cy="-140" r="4.5" fill="#FFFFFF" filter="url(#subtleGlow)" />
+    <circle cx="-170" cy="-40" r="4.5" fill="#00F0FF" filter="url(#subtleGlow)" />
+    <circle cx="210" cy="-40" r="4.5" fill="#FF007B" filter="url(#subtleGlow)" />
+  </g>
+</svg>
